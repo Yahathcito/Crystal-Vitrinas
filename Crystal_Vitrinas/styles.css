@@ -1,0 +1,265 @@
+/* ========================
+VARIABLES
+======================== */
+:root {
+    --azul-principal: #1F3F77;
+    --azul-secundario: #4E6FB6;
+    --azul-suave: #7E9ED9;
+    --fondo: #F6F5F2;
+    --texto: #1E1E1E;
+    --blanco: #ffffff;
+}
+
+/* ========================
+   RESET BÁSICO
+======================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========================
+   BASE
+======================== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ========================
+   CONTENEDOR
+======================== */
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ========================
+   HEADER STICKY
+======================== */
+.header {
+  position: sticky;
+  top: 0;
+  background-color: var(--blanco);
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
+/* ========================
+   NAV
+======================== */
+.nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: var(--azul-principal);
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: var(--azul-secundario);
+}
+
+/* ========================
+   HERO
+======================== */
+.hero {
+  background: linear-gradient(
+    to right,
+    var(--azul-principal),
+    var(--azul-secundario)
+  );
+  color: var(--blanco);
+  padding: 5rem 0;
+}
+
+.hero-contenido {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  margin-bottom: 2rem;
+}
+
+/* ========================
+   BOTONES
+======================== */
+.btn-principal,
+.btn-whatsapp {
+  display: inline-block;
+  background-color: var(--blanco);
+  color: var(--azul-principal);
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-principal:hover,
+.btn-whatsapp:hover {
+  background-color: var(--azul-suave);
+}
+
+/* ========================
+   SECCIONES
+======================== */
+section {
+  padding: 4rem 0;
+}
+
+section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: var(--azul-principal);
+  margin-bottom: 2rem;
+}
+
+/* ========================
+   SERVICIOS
+======================== */
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.servicio {
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* ========================
+   GALERÍA (PLACEHOLDERS)
+======================== */
+/* ========================
+   GALERIA INDEX
+======================== */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.galeria-item {
+  text-decoration: none;
+  color: inherit;
+}
+
+.galeria-placeholder {
+  background-color: #ddd;
+  height: 220px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.galeria-item:hover .galeria-placeholder {
+  transform: scale(1.03);
+}
+
+.galeria-titulo {
+  display: block;
+  margin-top: 0.6rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--azul-principal);
+}
+
+/* ========================
+   NOSOTROS
+======================== */
+.nosotros p {
+  max-width: 700px;
+}
+
+/* ========================
+   CONTACTO
+======================== */
+.contacto {
+  background-color: var(--azul-principal);
+  color: var(--blanco);
+}
+
+.contacto h2 {
+  color: var(--blanco);
+}
+
+/* ========================
+   FOOTER
+======================== */
+.footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: cen
+}
+/* ========================
+   MENU MOVIL
+======================== */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--azul-principal);
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--blanco);
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .nav a {
+    padding: 1rem;
+    border-top: 1px solid #eee;
+    margin: 0;
+  }
+
+  .nav.activo {
+    display: flex;
+  }
+}
