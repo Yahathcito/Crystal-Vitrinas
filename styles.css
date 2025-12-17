@@ -162,11 +162,9 @@ section h2 {
 }
 
 /* ========================
-   GALERÍA (PLACEHOLDERS)
+   GALERÍA
 ======================== */
-/* ========================
-   GALERIA INDEX
-======================== */
+
 .galeria-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -176,17 +174,24 @@ section h2 {
 .galeria-item {
   text-decoration: none;
   color: inherit;
-}
-
-.galeria-placeholder {
-  background-color: #ddd;
-  height: 220px;
-  border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
-.galeria-item:hover .galeria-placeholder {
-  transform: scale(1.03);
+.galeria-img {
+  height: 220px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.galeria-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.galeria-item:hover {
+  transform: scale(1.05);
 }
 
 .galeria-titulo {

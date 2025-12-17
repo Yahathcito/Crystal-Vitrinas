@@ -12,6 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('titulo').textContent = vitrina.nombre;
   document.getElementById('descripcion').textContent = vitrina.descripcion;
 
+  const img = document.getElementById('imagenVitrina');
+  img.src = vitrina.imagen;
+  img.alt = vitrina.nombre;
+
   const lista = document.getElementById('especificaciones');
 
   vitrina.especificaciones.forEach(spec => {
