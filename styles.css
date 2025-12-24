@@ -226,8 +226,67 @@ section h2 {
 ======================== */
 .footer {
   background-color: #111;
-  color: #aaa;
-  text-align: cen
+  color: var(--blanco);
+  text-align:center;
+  padding-left: 0.3rem;
+}
+.contenedor-secciones-footer{
+  border-bottom: 1px #303030 solid;
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-left: 0.2rem;
+}
+/* ========================
+   FOOTER SECCIONES
+======================== */
+.footer_sanRamon{
+  text-decoration: none;
+  color: var(--blanco);
+  cursor: pointer;
+}
+.contenedor-secciones-footer:nth-child(2){
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.footer-pagos{
+  padding: 0;
+}
+
+/* LISTA DE PAGOS - FLEX ROW */
+.lista-pagos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 1rem;
+
+}
+
+.pago-logo{
+  max-width: 40px;
+  height: auto;
+  filter: brightness(0.9);
+}
+
+/* LISTA DE REDES - FLEX ROW */
+.lista-redes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+.red-item{
+  transition: opacity 0.3s ease;
+}
+.red-item:hover{
+  opacity: 0.8;
+}
+.red-logo{
+  max-width: 40px;
+  height: auto;
+  filter: brightness(0.9);
 }
 /* ========================
    MENU MOVIL
@@ -267,4 +326,25 @@ section h2 {
   .nav.activo {
     display: flex;
   }
+  /* ========================
+  FOOTER MOVIL
+======================== */
+  .footer{
+    text-align:start;
+  }
+  .lista-pagos{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  }
+  .lista-redes{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
 }
+}
+
