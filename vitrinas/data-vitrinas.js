@@ -2,7 +2,7 @@ const VITRINAS = {
   vitrina1: {
     nombre: "Vitrina Urna Caliente",
     descripcion: "Diseño compacto para espacios reducidos.",
-    imagen: "../img/Urna-Caliente.jpeg",
+    imagen: "../img/Urna Caliente.webp",
     especificaciones: [
       "Vidrio templado",
       "Estructura metálica",
@@ -14,7 +14,7 @@ const VITRINAS = {
   vitrina2: {
     nombre: "Vitrina Confitera",
     descripcion: "Diseño compacto para espacios reducidos.",
-    imagen: "../img/confiterajpeg.jpeg",
+    imagen: "../img/confitera (1).webp",
     especificaciones: [
       "Vidrio reforzado",
       "Estructura metálica",
@@ -26,7 +26,7 @@ const VITRINAS = {
   vitrina3: {
     nombre: "Vitrina De Torre",
     descripcion: "Diseño compacto para espacios reducidos.",
-    imagen: "../img/Torre 180 alto x 60cm ancho x35cm de fondo.jpeg",
+    imagen: "../img/Torre 180 alto x 60cm ancho x35cm de fondo.webp",
     especificaciones: [
       "Vidrio reforzado",
       "Estructura metálica",
@@ -38,7 +38,7 @@ const VITRINAS = {
     vitrina4: {
     nombre: "Vitrina Comercial Grande",
     descripcion: "Vitrina ideal para negocios con alto flujo de clientes.",
-    imagen: "../img/2m largo x1.05m alto x45cm ancho.jpeg",
+    imagen: "../img/2m largo x1.05m alto x45cm ancho.webp",
     especificaciones: [
       "Vidrio reforzado",
       "Estructura metálica",
@@ -50,7 +50,7 @@ const VITRINAS = {
       vitrina5: {
     nombre: "Vitrina Comercial mediana",
     descripcion: "Diseño comercial para flujo de clientes.",
-    imagen: "../img/1.50cm largo x 1.05 alto x 45cm ancho.jpeg",
+    imagen: "../img/1.50cm largo x 1.05 alto x 45cm ancho.webp",
     especificaciones: [
       "Vidrio reforzado",
       "Estructura metálica",
