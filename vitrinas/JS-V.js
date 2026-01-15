@@ -30,7 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
     botonWhatsApp.addEventListener('click', (e) => {
       e.preventDefault();
       const nombreVitrina = vitrina.nombre;
-      const mensaje = `Hola, quisiera cotizar por la vitrina: ${nombreVitrina}`;
+const mensaje = `¡Hola!
+Me gustaría cotizar la siguiente vitrina:
+${nombreVitrina}
+
+Quedo atento, ¡gracias!`;
       const mensajeCodificado = encodeURIComponent(mensaje);
       const urlWhatsApp = `https://wa.me/+50663777773?text=${mensajeCodificado}`;
       window.open(urlWhatsApp, '_blank');
