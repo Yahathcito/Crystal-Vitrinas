@@ -23,4 +23,18 @@ document.addEventListener('DOMContentLoaded', () => {
     li.textContent = spec;
     lista.appendChild(li);
   });
+
+  // Agregar mensaje predeterminado al botón de WhatsApp
+  const botonWhatsApp = document.querySelector('.detalle-cta a');
+  if (botonWhatsApp) {
+    botonWhatsApp.addEventListener('click', (e) => {
+      e.preventDefault();
+      const nombreVitrina = vitrina.nombre;
+      const mensaje = `Hola, quisiera cotizar por la vitrina: ${nombreVitrina}`;
+      const mensajeCodificado = encodeURIComponent(mensaje);
+      const urlWhatsApp = `https://wa.me/+50663777773?text=${mensajeCodificado}`;
+      window.open(urlWhatsApp, '_blank');
+    });
+  }
 });
+ 
