@@ -34,8 +34,16 @@
 <main class="contenedor detalle-vitrina">
 
   <div class="detalle-imagen">
-    <img id="imagenVitrina" src="" alt="">
+    <img id="imagenVitrina" src="" alt="" class="imagen-clickeable">
 
+  </div>
+
+  <!-- Modal para ver imagen ampliada -->
+  <div id="modalImagen" class="modal-imagen">
+    <div class="modal-contenido">
+      <button class="modal-cerrar" id="btnCerrarModal">&times;</button>
+      <img id="imagenAmpliada" src="" alt="">
+    </div>
   </div>
 
   <div class="detalle-info">
