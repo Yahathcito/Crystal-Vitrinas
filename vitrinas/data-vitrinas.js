@@ -1,16 +1,4 @@
 const VITRINAS = {
-  vitrina1: {
-    nombre: "Vitrina Urna Caliente",
-    descripcion: "Diseño compacto para espacios reducidos.",
-    imagen: "../img/Urna Caliente.webp",
-    especificaciones: [
-      "Vidrio templado",
-      "Estructura metálica",
-      "Color Plateado",
-      "Dimensiones: 120 x 60 cm"
-    ]
-  },
-
   vitrina2: {
     nombre: "Vitrina Confitera",
     descripcion: "Diseño compacto para espacios reducidos.",
