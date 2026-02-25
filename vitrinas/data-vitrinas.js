@@ -1,8 +1,39 @@
 const VITRINAS = {
+  vitrina1: {
+    nombre: "Vitrina Caja",
+    descripcion: "Mueble para caja registradora.",
+    images: [
+      "../img/muebleCaja.jpg",
+      "../img/MuebleCaja(1).png",
+      "../img/MuebleCaja(2).png",
+      "../img/MuebleCaja(3).png",
+      "../img/MuebleCaja(4).png",
+      "../img/MuebleCaja(5).png"
+
+    ],
+    especificaciones: [
+      `📏 Medidas\n 
+      Alto: 150cm
+      x Ancho: 60cm
+      x Profundidad: 45cm`,
+      //pon emojis para cada especificación
+      "✅ Acabado en aluminio blanco",
+      "✅ Grosor del vidrio: 4mm",
+      "✅ Rodines incorporados para fácil movilidad",
+      "✅ Base de PVC protegido de vidrio",
+      "✅ Ofrecemos diferentes colores del aluminio: negro,bronce y silver",
+      "✅ Extras: Luz en tira led o linterna en parte superior",
+      "📏 Se fabrica a la medida y gusto del cliente"
+    ]   
+  },
   vitrina2: {
     nombre: "Vitrina Confitera",
     descripcion: "Diseño compacto para espacios reducidos.",
-    imagen: "../img/confitera (1).webp",
+    // lista de imágenes que se muestran en la galería (la primera es la principal)
+    images: [
+      "../img/confitera (1).webp",
+      "../img/confitera (1).webp", // duplicado de ejemplo; reemplazar por otra foto real
+    ],
     especificaciones: [
       "Vidrio reforzado",
       "Estructura metálica",
@@ -14,7 +45,10 @@ const VITRINAS = {
   vitrina3: {
     nombre: "Vitrina De Torre",
     descripcion: "Diseño compacto para espacios reducidos.",
-    imagen: "../img/Torre 180 alto x 60cm ancho x35cm de fondo.webp",
+    images: [
+      "../img/Torre 180 alto x 60cm ancho x35cm de fondo.webp",
+      // añadir más fotos aquí
+    ],
     especificaciones: [
       "Vidrio reforzado",
       "Estructura metálica",
@@ -26,7 +60,10 @@ const VITRINAS = {
     vitrina4: {
     nombre: "Vitrina Comercial Grande",
     descripcion: "Vitrina ideal para negocios con alto flujo de clientes.",
-    imagen: "../img/2m largo x1.05m alto x45cm ancho.webp",
+    images: [
+      "../img/2m largo x1.05m alto x45cm ancho.webp",
+      // fotos adicionales opcionales
+    ],
     especificaciones: [
       "Vidrio reforzado",
       "Estructura metálica",
@@ -38,7 +75,9 @@ const VITRINAS = {
       vitrina5: {
     nombre: "Vitrina Comercial mediana",
     descripcion: "Diseño comercial para flujo de clientes.",
-    imagen: "../img/1.50cm largo x 1.05 alto x 45cm ancho.webp",
+    images: [
+      "../img/1.50cm largo x 1.05 alto x 45cm ancho.webp",
+    ],
     especificaciones: [
       "Vidrio reforzado",
       "Estructura metálica",

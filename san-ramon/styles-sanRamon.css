@@ -2,11 +2,9 @@
    HERO LOCAL
 ======================== */
 .hero-local {
-  background: linear-gradient(
-    to right,
-    var(--azul-principal),
-    var(--azul-secundario)
-  );
+  background-image: url(../img/localSanRamon.webp);
+  background-size: cover;
+  background-position: center;
   color: var(--blanco);
   text-align: center;
   padding: 3rem 1rem;

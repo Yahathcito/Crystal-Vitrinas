@@ -22,8 +22,9 @@
    COLUMNA IMAGEN
 ======================== */
 .detalle-imagen {
+  position: relative;
   width: 100%;
-  height: 420px;
+  height: 500px;
   background-color: #e0e0e0; /* Placeholder mientras no hay imagen */
   border-radius: 10px;
 }
@@ -180,6 +181,55 @@
 }
 
 /* ========================
+   GALERÍA DE IMÁGENES
+======================== */
+.gallery-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.gallery-btn {
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  pointer-events: all;
+  font-size: 1.2rem;
+  border-radius: 4px;
+}
+
+.gallery-thumbnails {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.gallery-thumbnails .thumb {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.gallery-thumbnails .thumb:hover,
+.gallery-thumbnails .thumb.active {
+  border-color: var(--azul-principal);
+}
+/*FOOTER*/
+.footer {
+  margin-top: 4rem;
+}
+/* ========================
    RESPONSIVE
 ======================== */
 @media (max-width: 900px) {
@@ -190,5 +240,11 @@
 
   .detalle-imagen {
     height: 300px;
+  }
+  .detalle-info{
+    margin-top: 4rem;
+  }
+  .footer{
+    margin-top: 0;
   }
 }
